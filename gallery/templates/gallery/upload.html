@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Upload Images</title>
+</head>
+<body>
+	<a href="{% url 'index' %}">Home</a>
+	<h1>Image Uploader</h1>
+	<form enctype="multipart/form-data" method="POST" action="{% url 'saveimage' %}">
+		{% csrf_token %}
+		<input type="file" name="image">
+		<p>Input tags(sketch, nature, portrait, cars, wildlife) separated by a comma(,):</p>
+		<input type="text" name="tags">
+		<p></p>
+		<input type="submit" value="Upload"/>
+	</form>
+
+	<br><br>
+
+</body>
+</html>

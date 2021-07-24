@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Upload Images</title>
+</head>
+<body>
+<p></p>
+	<center>
+		<img src="/media/{{image}}" height="720" width="1080" hspace="100px" id="img" name="image">
+	</center>
+	<form enctype="multipart/form-data" method="POST" action="{% url 'showimage' %}?{{image}}">
+		{% csrf_token %}
+		<p></p>
+		<a href="{% url 'index' %}">Home</a>
+		<input type="submit" name="left" value="Left">
+		<input type="submit" name="right" value="Right">
+	</form>
+<br><br>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Search by tag</title>
+</head>
+<body>
+	<a href="{% url 'index' %}">Home</a>
+	<p></p>
+	{% for image in images %}
+		<img src="/media/{{image}}" height="120" width="220">
+	{% endfor %}
+</body>
+</html>
