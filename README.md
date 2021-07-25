@@ -4,6 +4,6 @@
 4. Run localhost <code>python3 manage.py runserver</code>
 5. Goto http://127.0.0.1:8000/ or localhost:8000
 
-PS: Please use hard reload <code>Ctrl + Shift + f5</code> to reload static files/images and see rotations on images.
+PS: Please use hard reload <code>Ctrl + f5</code> to reload static files/images and see rotations on images.
 
 Cheers!!!
